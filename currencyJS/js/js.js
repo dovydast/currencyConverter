@@ -13,7 +13,7 @@ const showData = async () => {
 
   for (let info in data.rates){ // pasiemam valiutu info is rates pvz: CAD 1.4498
       let option = document.createElement('option'); // sukuriam option elementa
-      document.querySelector('select').appendChild(option); // sukuriam select elementa ir priskiriame prie option elemento
+      document.querySelector('select').appendChild(option); // prie select elemento priskiriam option elementa
       option.textContent = info; // option elemente spausdiname Valiutu pavadinimus pvz: CAD, USD, JPN ir t.t
       option.setAttribute("value",data.rates[info]); // option elementui setinam value atributa su valiutos reiksme pvz . tai Value bus 1.4498 priskitas prie CAD pavadinimo.
   }
